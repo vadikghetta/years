@@ -1,0 +1,25 @@
+@use "../sass/_variables.scss" as vars;
+.main {
+    padding-top: 170px;
+    background: vars.$ghost;
+    height: 100vh;
+  }
+  
+  .title {
+    color: vars.$dark;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    position: relative;
+    padding-left: 78px;
+  }
+  
+  .title::before {
+    content: "";
+    display: block;
+    position: absolute;
+  
+    height: 100%;
+    width: 5px;
+    background: vars.$gradient;
+    left: 0;
+  }
